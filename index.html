@@ -12,23 +12,36 @@
   
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body>
-  <nav>
+<body class="">
+  <header>
     <div class="nav-flex-container">
       <div class="logo-container">
         <img class="logo" src="./assets/images/logo.svg" alt="logo">
       </div>
-      <div class="menu-container">
-        <div class="menu-option"><p>Home</p></div>
-        <div class="menu-option"><p>New</p></div>
-        <div class="menu-option"><p>Popular</p></div>
-        <div class="menu-option"><p>Trending</p></div>
-        <div class="menu-option"><p>Categories</p></div>
-        <img class="menu menu-burger" src="./assets/images/icon-menu.svg" alt="menu-icon">
-      </div>
+      <nav>
+        <div class="menu-container">
+          <a class="menu-option" href="#">Home</a>
+          <a class="menu-option" href="#">New</a>
+          <a class="menu-option" href="#">Popular</a>
+          <a class="menu-option" href="#">Trending</a>
+          <a class="menu-option" href="#">Categories</a>
+          <button class="menu-burger"><img class="menu " src="./assets/images/icon-menu.svg" alt="menu-icon"></button>
+        </div>
+      </nav>
+      <nav class="mobile-nav hide">
+        <div class="close-btn-container">
+          <button class="close-icon"><img src="./assets/images/icon-menu-close.svg"></button>
+        </div>
+        <div class="mobile-nav-container">
+          <a class="menu-options-mobile" href="#">Home</a>
+          <a class="menu-options-mobile" href="#">New</a>
+          <a class="menu-options-mobile" href="#">Popular</a>
+          <a class="menu-options-mobile" href="#">Trending</a>
+          <a class="menu-options-mobile" href="#">Categories</a>
+        </div>    
+      </nav>
     </div>
-  </nav>
-
+  </header>
   <main>
     <div class="flex-container">
       <div class="content-container">
@@ -87,5 +100,7 @@
       </div>
     </div>
   </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="./index.js" charset="UTF-8"></script>
 </body>
 </html>
