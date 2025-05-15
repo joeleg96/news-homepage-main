@@ -238,6 +238,11 @@ hr {
         color: var(--dark-blue);
         text-decoration: none;
     }
+
+    .menu-option:hover {
+        color: var(--orange);
+        cursor: pointer;
+    }
     .menu-burger {
         display: none;
     }
@@ -280,6 +285,11 @@ hr {
         line-height: 150%;
     }
 
+    .read-more-btn:hover {
+        background-color: var(--dark-blue);
+        color: var(--off-white);
+    }
+
     .new-stories-container {
         width: 21.875rem;
         height: 30.125rem;
@@ -292,11 +302,21 @@ hr {
         margin: 0;
     }
 
+    .new-h3:hover {
+        color: var(--orange);
+        cursor: pointer;
+    }
+
     .top-stories-container {
         display: flex;
         flex-direction: row;
         margin-top: 2rem;
         margin-bottom: 0;
+    }
+
+    .top-stories-title:hover {
+        color: var(--red);
+        cursor: pointer;
     }
 
     .container-01, .container-02, .container-03 {
